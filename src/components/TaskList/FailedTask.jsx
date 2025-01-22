@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FailedTask = () => {
+const FailedTask = ({ data }) => {
   return (
     <div className='bg-yellow-400 h-full w-[350px] rounded-xl p-5 flex-shrink-0'>
     <div className='flex justify-between items-center'>

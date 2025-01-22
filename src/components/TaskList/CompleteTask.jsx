@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CompleteTask = () => {
+const CompleteTask = ({ data }) => {
   return (
     <div className='bg-blue-400 h-full w-[350px] rounded-xl p-5 flex-shrink-0'>
     <div className='flex justify-between items-center'>
@@ -20,4 +20,4 @@ const CompleteTask = () => {
   )
 }
 
-export default CompleteTask
+export default CompleteTask;
