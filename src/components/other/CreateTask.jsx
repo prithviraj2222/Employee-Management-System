@@ -10,18 +10,20 @@ const CreateTask = () => {
   const [category, setCategory] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
   const [task, setTask] = useState({});
-
+  let idCount = 10;
   const submitHandler = (event) => {
     event.preventDefault();
+    ++idCount;
 
     setTask({
+      idCount,
       taskTitle,
       taskDescription,
       category,
       taskDate,
       assign,
       failed: false,
-      active: false,
+      active: true,
       newTask: true,
       completed: false,
     });
